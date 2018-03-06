@@ -88,7 +88,7 @@ onDistanceChangeHandler_ch5(PhidgetDistanceSensorHandle ch, void *ctx, uint32_t 
 
 int
 main(int argc, char **argv) {
-  	ros::init(argc, argv, "talker");
+  	ros::init(argc, argv, "sonar_phidget");
   	ros::NodeHandle n;
 	ros::Publisher pub = n.advertise<sonar_phidget::sonarData>("sonar_data", 100);
   	ros::Rate loop_rate(4);
