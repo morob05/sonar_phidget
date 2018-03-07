@@ -36,6 +36,8 @@ void mySigintHandler(int sig)
   PhidgetDistanceSensor_delete(&ch3);
   PhidgetDistanceSensor_delete(&ch4);
   PhidgetDistanceSensor_delete(&ch5);
+  PhidgetDistanceSensor_delete(&ch6);
+  PhidgetDistanceSensor_delete(&ch7);
   ROS_INFO("Successfully shut down! \n");
   // All the default sigint handler does is call shutdown()
   ros::shutdown();
